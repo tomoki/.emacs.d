@@ -12,5 +12,5 @@
  '(tex-verbatim ((t nil))))
 
 
-(require 'auctex-latexmk)
-(auctex-latexmk-setup)
+;; (require 'auctex-latexmk)
+;; (auctex-latexmk-setup)

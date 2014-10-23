@@ -4,7 +4,7 @@
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
 ;;;### (autoloads nil "evil-nerd-commenter" "evil-nerd-commenter.el"
-;;;;;;  (21574 26809 486566 677000))
+;;;;;;  (21576 12993 796150 85000))
 ;;; Generated autoloads from evil-nerd-commenter.el
 
 (autoload 'evilnc-comment-or-uncomment-paragraphs "evil-nerd-commenter" "\
@@ -75,8 +75,8 @@ Set the hotkeys of evil-nerd-comment
 
 ;;;***
 
-;;;### (autoloads nil nil ("evil-nerd-commenter-pkg.el") (21574 26809
-;;;;;;  495437 591000))
+;;;### (autoloads nil nil ("evil-nerd-commenter-pkg.el") (21576 12993
+;;;;;;  840564 321000))
 
 ;;;***
 
