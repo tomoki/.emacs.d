@@ -13,7 +13,7 @@
 ;; (define-key global-map (kbd "S-SPC") 'skk-mode)
 
 ;;;;チュートリアルの場所設定
-(setq skk-tut-file "~/.emacs.d/skk/data/SKK.tut")
+;;(setq skk-tut-file "~/.emacs.d/skk/data/SKK.tut")
 
 ;; メッセージを日本語で通知する
 (setq skk-japanese-message-and-error t)
@@ -111,7 +111,8 @@
 
 ;; ;; 複数の Emacsen を起動して個人辞書を共有する
 ;; (setq skk-share-private-jisyo t)
-(setq skk-large-jisyo "~/.emacs.d/skk/dic/SKK-JISYO.L")
+;;(setq skk-large-jisyo "~/.emacs.d/skk/dic/SKK-JISYO.L")
+(setq skk-large-jisyo "~/.emacs.d/SKK-JISYO.L")
 
 ;; 10 分放置すると個人辞書が自動的に保存される設定
 (defvar skk-auto-save-jisyo-interval 600)
