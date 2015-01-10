@@ -8,7 +8,9 @@
 
 (show-paren-mode 1)
 (setq-default show-paren-delay 0)
+
 (fringe-mode (cons nil 0))
+
 
 (load-theme 'zenburn t)
 
