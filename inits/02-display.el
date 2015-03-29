@@ -26,13 +26,48 @@
         ))
 
 (setq font-lock-maximum-decoration t)
-;;if windowsystem,config font.
-(when window-system
+
+(defconst default-font-size 120)
+(defconst big-font-size (round (* default-font-size 1.5)))
+
+(defun config-font-size (size)
+  (interactive "nInput font size: s")
   (progn
     (set-frame-font "Migu 1M")
-    (set-face-attribute 'default nil :height 100 :weight 'normal :slant 'normal)
-    (set-face-attribute 'fixed-pitch nil :height 100 :weight 'normal :slant 'normal)
+    (set-face-attribute 'default nil :height size :weight 'normal :slant 'normal)
+    (set-face-attribute 'fixed-pitch nil :height size :weight 'normal :slant 'normal)
     ;; (set-frame-parameter nil 'alpha 80)
     (set-fontset-font (frame-parameter nil 'font)
                       'japanese-jisx0208
                       '("Migu 1M" . "unicode-bmp"))))
+
+(defun config-default-font-size ()
+  (interactive)
+  (config-font-size default-font-size))
+(defun config-big-font-size ()
+  (interactive)
+  (config-font-size big-font-size))
+
+(defun get-attribute (lst sym)
+  (let ((filter (lambda (condp)
+                  (delq nil
+                        (mapcar (lambda (x) (and (funcall condp x) x)) lst)))))
+    (cdr (car (funcall filter (lambda (x) (eq (car x) sym)))))))
+
+;; calc using width
+(defun calc-dpi (workspace physical-size)
+  (let ((dots-in-one-line (max (nth 2 workspace) (nth 3 workspace)))
+        (width-in-inch    (/ (max (nth 0 physical-size) (nth 1 physical-size)) 25.4)))
+    (/ dots-in-one-line width-in-inch)))
+(defun get-current-dpi ()
+  (let ((current-window (frame-monitor-attributes)))
+    (calc-dpi (get-attribute current-window 'workarea) (get-attribute current-window 'mm-size))))
+
+(defun adjust-font-size ()
+  (interactive)
+  (if (> (get-current-dpi) 160)
+      (config-big-font-size)
+    (config-default-font-size)))
+
+(when window-system
+  (adjust-font-size))
