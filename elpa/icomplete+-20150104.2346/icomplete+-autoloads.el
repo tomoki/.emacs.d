@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "icomplete+" "icomplete+.el" (21679 60800 744276
-;;;;;;  270000))
+;;;### (autoloads nil "icomplete+" "icomplete+.el" (21815 64248 525914
+;;;;;;  626000))
 ;;; Generated autoloads from icomplete+.el
 
 (let ((loads (get 'Icomplete-Plus 'custom-loads))) (if (member '"icomplete+" loads) nil (put 'Icomplete-Plus 'custom-loads (cons '"icomplete+" loads))))

@@ -1,5 +1,4 @@
 ;;; dired-single.el --- Reuse the current dired buffer to visit another directory
-;; Version: 20130824.1200
 ;;; @(#) $Id: dired-single.el,v 1.7 2008/10/30 01:49:22 joe Exp $
 
 ;; This file is not part of Emacs
@@ -9,6 +8,7 @@
 ;; Maintainer:      Joe Casadonte (emacs@northbound-train.com)
 ;; Created:         August 17, 2000
 ;; Keywords:        dired reuse buffer
+;; Package-Version: 20130824.1200
 ;; Latest Version:  http://www.northbound-train.com/emacs.html
 
 ;; COPYRIGHT NOTICE

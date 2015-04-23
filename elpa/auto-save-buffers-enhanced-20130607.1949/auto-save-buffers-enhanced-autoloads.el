@@ -4,7 +4,7 @@
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
 ;;;### (autoloads nil "auto-save-buffers-enhanced" "auto-save-buffers-enhanced.el"
-;;;;;;  (21574 27047 268793 39000))
+;;;;;;  (21815 64314 882700 352000))
 ;;; Generated autoloads from auto-save-buffers-enhanced.el
 
 (autoload 'auto-save-buffers-enhanced "auto-save-buffers-enhanced" "\

@@ -5,8 +5,8 @@
 ;; Author: Colin Walters <walters@verbum.org>
 ;; Maintainer: browse-kill-ring <browse-kill-ring@tonotdo.com>
 ;; Created: 7 Apr 2001
-;; Version: 20150104.1237
-;; X-Original-Version: 2.0.0
+;; Version: 2.0.0
+;; Package-Version: 20150104.1237
 ;; URL: https://github.com/browse-kill-ring/browse-kill-ring
 ;; Keywords: convenience
 

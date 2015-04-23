@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("fringe-helper.el") (21680 3324 798054
-;;;;;;  504000))
+;;;### (autoloads nil nil ("fringe-helper.el") (21815 64197 542825
+;;;;;;  374000))
 
 ;;;***
 

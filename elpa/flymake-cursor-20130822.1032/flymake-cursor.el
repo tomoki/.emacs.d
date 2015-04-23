@@ -1,5 +1,4 @@
 ;;; flymake-cursor.el --- displays flymake error msg in minibuffer after delay
-;; Version: 20130822.1032
 ;;
 ;; Author     : ??
 ;; origin     : http://paste.lisp.org/display/60617,1/raw
@@ -9,6 +8,7 @@
 ;; Modified   : December 2012
 ;; Version    : 0.1.5
 ;; Keywords   : languages mode flymake
+;; Package-Version: 20130822.1032
 ;; X-URL      : http://www.emacswiki.org/emacs/flymake-cursor.el
 ;; Last-saved : <2012-Dec-20 09:49:28>
 ;;

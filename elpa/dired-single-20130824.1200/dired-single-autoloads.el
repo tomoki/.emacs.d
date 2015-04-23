@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "dired-single" "dired-single.el" (21574 28442
-;;;;;;  104902 152000))
+;;;### (autoloads nil "dired-single" "dired-single.el" (21815 64201
+;;;;;;  729157 388000))
 ;;; Generated autoloads from dired-single.el
 
 (autoload 'dired-single-buffer "dired-single" "\
