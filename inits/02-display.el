@@ -31,7 +31,7 @@
 (defconst big-font-size (round (* default-font-size 1.5)))
 
 (defun config-font-size (size)
-  (interactive "nInput font size: s")
+  (interactive "nInput font size: ")
   (progn
     (set-frame-font "Migu 1M")
     (set-face-attribute 'default nil :height size :weight 'normal :slant 'normal)
@@ -69,5 +69,6 @@
       (config-big-font-size)
     (config-default-font-size)))
 
-(when window-system
-  (adjust-font-size))
+(config-default-font-size)
+;; (when window-system
+;;   (adjust-font-size))
