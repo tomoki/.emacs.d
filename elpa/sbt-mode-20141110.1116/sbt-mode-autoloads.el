@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "sbt-mode" "sbt-mode.el" (21731 30322 23888
-;;;;;;  268000))
+;;;### (autoloads nil "sbt-mode" "sbt-mode.el" (21821 17431 676308
+;;;;;;  929000))
 ;;; Generated autoloads from sbt-mode.el
 
 (autoload 'sbt-start "sbt-mode" "\
@@ -42,8 +42,8 @@ sbt:default-command, if no other command has yet been run).
 
 ;;;***
 
-;;;### (autoloads nil "sbt-mode-rgrep" "sbt-mode-rgrep.el" (21731
-;;;;;;  30322 27221 531000))
+;;;### (autoloads nil "sbt-mode-rgrep" "sbt-mode-rgrep.el" (21821
+;;;;;;  17431 686308 874000))
 ;;; Generated autoloads from sbt-mode-rgrep.el
 
 (autoload 'sbt-grep "sbt-mode-rgrep" "\
@@ -64,8 +64,8 @@ Recursively grep for definition of ID in scala files in the directory tree roote
 ;;;***
 
 ;;;### (autoloads nil nil ("sbt-mode-buffer.el" "sbt-mode-comint.el"
-;;;;;;  "sbt-mode-pkg.el" "sbt-mode-project.el") (21731 30322 104839
-;;;;;;  213000))
+;;;;;;  "sbt-mode-pkg.el" "sbt-mode-project.el") (21821 17431 706923
+;;;;;;  308000))
 
 ;;;***
 

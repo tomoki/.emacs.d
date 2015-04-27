@@ -687,7 +687,12 @@ Set `org-capture-templates' to be similar to `org-remember-templates'.
 
 ;;;***
 
-;;;### (autoloads nil "org-clock" "org-clock.el" "1f771a78db9d45fdbc2a4be1441644cb")
+;;;### (autoloads (org-clock-update-time-maybe org-dblock-write:clocktable
+;;;;;;  org-clocktable-shift org-clock-report org-clock-get-clocktable
+;;;;;;  org-clock-remove-overlays org-clock-display org-clock-sum
+;;;;;;  org-clock-goto org-clock-cancel org-clock-out org-clock-in-last
+;;;;;;  org-clock-in org-resolve-clocks) "org-clock" "org-clock.el"
+;;;;;;  "dd849ac89f30ddd981c37863a1b35e00")
 ;;; Generated autoloads from org-clock.el
 
 (autoload 'org-resolve-clocks "org-clock" "\
@@ -2133,7 +2138,7 @@ Call the customize function with org as argument.
 
 ;;;***
 
-;;;### (autoloads nil "ox" "ox.el" "78299bd1ecc095f35b64d541cdab627b")
+;;;### (autoloads nil "ox" "ox.el" "a3f90141f011b5f549828135c723de85")
 ;;; Generated autoloads from ox.el
 
 (autoload 'org-export-as "ox" "\
@@ -2301,7 +2306,9 @@ When ARG is \\[universal-argument] \\[universal-argument], display the asynchron
 
 ;;;***
 
-;;;### (autoloads nil "ox-ascii" "ox-ascii.el" "7e588a3cad6dc53323ca8e0d2965d60a")
+;;;### (autoloads (org-ascii-publish-to-utf8 org-ascii-publish-to-latin1
+;;;;;;  org-ascii-publish-to-ascii org-ascii-export-to-ascii org-ascii-export-as-ascii)
+;;;;;;  "ox-ascii" "ox-ascii.el" "8bba507846964285c7ecb40e66b6afe3")
 ;;; Generated autoloads from ox-ascii.el
 
 (autoload 'org-ascii-export-as-ascii "ox-ascii" "\

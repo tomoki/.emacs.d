@@ -3,10 +3,7 @@
 (set-language-environment 'Japanese)
 (set-locale-environment nil)
 
-
-(add-to-list 'load-path "~/.emacs.d/elmy/skk")
-
-(require 'skk-autoloads)
+;; (require 'skk-autoloads)
 
 ;;shift spaceでskk-mode
 (global-set-key "\C-x\C-j" 'skk-mode)

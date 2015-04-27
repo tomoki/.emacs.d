@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "magit-filenotify" "magit-filenotify.el" (21716
-;;;;;;  59805 873098 327000))
+;;;### (autoloads nil "magit-filenotify" "magit-filenotify.el" (21821
+;;;;;;  17458 906159 193000))
 ;;; Generated autoloads from magit-filenotify.el
 
 (autoload 'magit-filenotify-mode "magit-filenotify" "\

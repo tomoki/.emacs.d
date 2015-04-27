@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "git-rebase-mode" "git-rebase-mode.el" (21716
-;;;;;;  59814 866294 353000))
+;;;### (autoloads nil "git-rebase-mode" "git-rebase-mode.el" (21821
+;;;;;;  17452 762859 608000))
 ;;; Generated autoloads from git-rebase-mode.el
 
 (autoload 'git-rebase-mode "git-rebase-mode" "\
