@@ -44,7 +44,6 @@
 (global-set-key (kbd "M-%") 'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 
-(require 'auto-save-buffers-enhanced)
-(setq auto-save-buffers-enhanced-interval 0.5)
-(setq auto-save-buffers-enhanced-quiet-save-p t)
-(auto-save-buffers-enhanced t)
+(require 'real-auto-save)
+(setq real-auto-save-interval 0.5)
+(add-hook 'find-file-hook 'real-auto-save-mode)
