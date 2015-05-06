@@ -9,10 +9,21 @@
 (show-paren-mode 1)
 (setq-default show-paren-delay 0)
 
-(fringe-mode (cons nil 0))
+;; (fringe-mode (cons nil 0))
+
+;; (load-theme 'zenburn t)
+;; do not change font size, please?
+(setq monokai-height-minus-1 1.0)
+(setq monokai-height-plus-1 1.0)
+(setq monokai-height-plus-2 1.0)
+(setq monokai-height-plus-3 1.0)
+(setq monokai-height-plus-4 1.0)
+(setq monokai-use-variable-pitch nil)
+
+(load-theme 'monokai t)
 
 
-(load-theme 'zenburn t)
+
 
 (require 'whitespace)
 ;; make whitespace-mode use just basic coloring
@@ -72,3 +83,6 @@
 (config-default-font-size)
 ;; (when window-system
 ;;   (adjust-font-size))
+
+(require 'volatile-highlights)
+(volatile-highlights-mode t)
