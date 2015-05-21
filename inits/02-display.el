@@ -11,16 +11,16 @@
 
 ;; (fringe-mode (cons nil 0))
 
-;; (load-theme 'zenburn t)
+(load-theme 'zenburn t)
 ;; do not change font size, please?
-(setq monokai-height-minus-1 1.0)
-(setq monokai-height-plus-1 1.0)
-(setq monokai-height-plus-2 1.0)
-(setq monokai-height-plus-3 1.0)
-(setq monokai-height-plus-4 1.0)
-(setq monokai-use-variable-pitch nil)
+;; (setq monokai-height-minus-1 1.0)
+;; (setq monokai-height-plus-1 1.0)
+;; (setq monokai-height-plus-2 1.0)
+;; (setq monokai-height-plus-3 1.0)
+;; (setq monokai-height-plus-4 1.0)
+;; (setq monokai-use-variable-pitch nil)
 
-(load-theme 'monokai t)
+;; (load-theme 'monokai t)
 
 
 
@@ -53,8 +53,7 @@
                       '("Migu 1M" . "unicode-bmp"))))
 
 (defun config-default-font-size ()
-  (interactive)
-  (config-font-size default-font-size))
+  (interactive)  (config-font-size default-font-size))
 (defun config-big-font-size ()
   (interactive)
   (config-font-size big-font-size))
