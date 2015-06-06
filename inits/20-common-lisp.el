@@ -18,3 +18,5 @@
 (push '(slime-repl-mode) popwin:special-display-config)
 ;; Connections
 (push '(slime-connection-list-mode) popwin:special-display-config)
+
+(setq common-lisp-hyperspec-root (concat "file://" (expand-file-name "~/.emacs.d/HyperSpec/")))

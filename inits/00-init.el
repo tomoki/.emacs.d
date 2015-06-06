@@ -47,3 +47,5 @@
 (require 'auto-save-buffers-enhanced)
 (auto-save-buffers-enhanced t)
 (setq auto-save-buffers-enhanced-quiet-save-p t)
+
+(setq browse-url-browser-function 'eww-browse-url)
