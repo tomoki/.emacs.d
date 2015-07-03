@@ -40,7 +40,7 @@
    "g++" '("-std=c++11" "-Wall" "-Wextra" "-Wshadow" "-fsyntax-only")))
 
 (push '("\\.c\\'" flymake-c-init) flymake-allowed-file-name-masks)
-(push '("\\.\\(cc\\|cpp\\|C\\|CPP\\|hpp\\|h\\)\\'" flymake-cc-init)
+(push '("\\.\\(cc\\|cpp\\|hpp\\|h\\)\\'" flymake-cc-init)
       flymake-allowed-file-name-masks)
 
 
