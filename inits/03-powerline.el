@@ -4,6 +4,10 @@
 (set-face-attribute 'mode-line          nil :box nil)
 (set-face-attribute 'mode-line-inactive nil :box nil)
 
+(set-face-attribute 'powerline-active1 nil
+                    :foreground "#adff85"
+                    :background "#388e0d"
+                    :inherit 'mode-line)
 (defun powerline-tomoki-theme ()
   "Setup the tomoki mode-line."
   (interactive)
