@@ -6,7 +6,7 @@
 
 (set-face-attribute 'powerline-active1 nil
                     :foreground "#adff85"
-                    :background "#388e0d"
+                    :background "#1d5700"
                     :inherit 'mode-line)
 (defun powerline-tomoki-theme ()
   "Setup the tomoki mode-line."
