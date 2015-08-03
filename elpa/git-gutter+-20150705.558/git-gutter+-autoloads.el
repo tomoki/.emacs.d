@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "git-gutter+" "git-gutter+.el" (21914 40687
-;;;;;;  138997 262000))
+;;;### (autoloads nil "git-gutter+" "git-gutter+.el" (21951 45070
+;;;;;;  170274 373000))
 ;;; Generated autoloads from git-gutter+.el
 
 (autoload 'git-gutter+-mode "git-gutter+" "\
@@ -34,6 +34,11 @@ the mode if ARG is omitted or nil, and toggle it if ARG is `toggle'.
 Commit staged changes. If nothing is staged, ask to stage the current buffer.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("git-gutter+-pkg.el") (21951 45070 181441
+;;;;;;  269000))
 
 ;;;***
 
