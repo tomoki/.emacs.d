@@ -49,3 +49,19 @@
 (setq auto-save-buffers-enhanced-quiet-save-p t)
 
 (setq browse-url-browser-function 'eww-browse-url)
+
+
+(setq windows-should-not-be-closed '("*eshell*" "*scratch*" "*Messages*" "*Completions*"))
+(defun close-all-aux (kill-list)
+  (progn
+    (dolist (buffer (buffer-list))
+      (let ((name (buffer-name buffer)))
+        (when (and name
+                   (not (string-equal name ""))
+                   (/= (aref name 0) ?\s)
+                   (not (member name kill-list)))
+          (kill-buffer buffer))))))
+
+(defun close-all ()
+  (interactive)
+  (close-all-aux windows-should-not-be-closed))
