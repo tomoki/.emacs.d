@@ -50,26 +50,6 @@
 ;; Enter キーを押したときには確定する
 (setq skk-egg-like-newline t)
 
-;; 対応する閉括弧を自動的に挿入する
-;; (setq skk-auto-insert-paren t)
-
-;; 動的な補完を使う
-;; (setq skk-dcomp-activate t)
-
-;; 動的補完の可否を判定するより高度な設定例
-;; (setq skk-dcomp-activate
-;;       #'(lambda ()
-;;           (and
-;;             ;; -nw では動的補完をしない。
-;;             window-system
-;;             ;; 基本的に行末のときのみ補完する。ただし行末でなくても現在の
-;;             ;; ポイントから行末までの文字が空白のみだったら補完する。
-;;             (or (eolp)
-;;                 (looking-at "[ \t]+$")))))
-
-;; ;; 動的補完で候補を複数表示する
-;; (setq skk-dcomp-multiple-activate t)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;変換動作の調整
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -86,32 +66,15 @@
 ;;単漢字検索のキーを!にする
 (setq skk-tankan-search-key ?!)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; @@ 検索に関連した設定
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 ;; 数値変換機能を使う
 (setq skk-use-numeric-conversion t)
-
-;; カタカナ語を変換候補に加える。
-;; (setq skk-search-prog-list
-;;       (skk-nunion skk-search-prog-list
-;;                   '((skk-search-katakana))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;辞書に関する設定
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; ;; 辞書サーバを使うための設定
-;; ;;(setq skk-server-host "localhost")
-;; (setq skk-server-portnum 1178)
-
-;; ;; 複数の Emacsen を起動して個人辞書を共有する
-;; (setq skk-share-private-jisyo t)
-;;(setq skk-large-jisyo "~/.emacs.d/skk/dic/SKK-JISYO.L")
 (setq skk-large-jisyo "~/.emacs.d/SKK-JISYO.L")
 
-;; 10 分放置すると個人辞書が自動的に保存される設定
 (defvar skk-auto-save-jisyo-interval 600)
 (defun skk-auto-save-jisyo ()
   (skk-save-jisyo)
@@ -119,47 +82,6 @@
 (run-with-idle-timer skk-auto-save-jisyo-interval
                      skk-auto-save-jisyo-interval
                      'skk-auto-save-jisyo)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;その他いろいろ
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; かなモードの入力で (モード変更を行なわずに) 長音(ー)を
-;; ASCII 数字の直後では `-' に、全角数字の直後では `?' にしたい。
-;; (setq skk-rom-kana-rule-list
-;;       (cons '("-" nil skk-hyphen)
-;;             skk-rom-kana-rule-list))
-;; (defun skk-hyphen (arg)
-;;   (let ((c (char-before (point))))
-;;     (cond ((null c) "ー")
-;;           ((and (<= ?0 c) (>= ?9 c)) "-")
-;;           ((and (<= ?０ c) (>= ?９ c)) "?")
-;;           (t "ー"))))
-
-;; かなモードの入力でモード変更を行わずに、数字入力中の
-;; 小数点 (.) およびカンマ (,) 入力を実現する。
-;; (例) かなモードのまま 1.23 や 1,234,567 などの記述を行える。
-;; period
-;; (setq skk-rom-kana-rule-list
-;;       (cons '("." nil skk-period)
-;;             skk-rom-kana-rule-list))
-;; (defun skk-period (arg)
-;;   (let ((c (char-before (point))))
-;;     (cond ((null c) "。")
-;;           ((and (<= ?0 c) (>= ?9 c)) ".")
-;;           ((and (<= ?０ c) (>= ?９ c)) "．")
-;;           (t "。"))))
-
-;; ;; comma
-;; (setq skk-rom-kana-rule-list
-;;       (cons '("," nil skk-comma)
-;;             skk-rom-kana-rule-list))
-;; (defun skk-comma (arg)
-;;   (let ((c (char-before (point))))
-;;     (cond ((null c) "、")
-;;           ((and (<= ?0 c) (>= ?9 c)) ",")
-;;           ((and (<= ?０ c) (>= ?９ c)) "，")
-;;           (t "、"))))
 
 
 (require 'skk)

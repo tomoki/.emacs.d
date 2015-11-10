@@ -44,6 +44,7 @@
 (defun config-font-size (size)
   (interactive "nInput font size: ")
   (progn
+    ;; (set-frame-font "Migu 1M")
     (set-frame-font "Migu 1M")
     (set-face-attribute 'default nil :height size :weight 'normal :slant 'normal)
     (set-face-attribute 'fixed-pitch nil :height size :weight 'normal :slant 'normal)
@@ -83,8 +84,13 @@
 ;; (when window-system
 ;;   (adjust-font-size))
 
-(require 'volatile-highlights)
-(volatile-highlights-mode t)
+;; (require 'volatile-highlights)
+;; (volatile-highlights-mode t)
+
+
+
+(global-hl-line-mode)
+(set-face-background 'hl-line "#3e4446")
 
 (require 'fic-mode)
 (add-hook 'prog-mode-hook 'fic-mode)

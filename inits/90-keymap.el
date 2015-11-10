@@ -15,3 +15,5 @@
 (setq-default cua-enable-cua-keys nil)
 (setq-default transient-mark-mode t)
 
+(define-key global-map (kbd "C-c C-<return>") (lambda () (interactive)
+                                                (call-process-shell-command "urxvt&" nil 0)))
