@@ -15,7 +15,8 @@
  '(custom-safe-themes
    (quote
     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "108b3724e0d684027c713703f663358779cc6544075bc8fd16ae71470497304f" "282606e51ef2811142af5068bd6694b7cf643b27d63666868bc97d04422318c1" "a041a61c0387c57bb65150f002862ebcfe41135a3e3425268de24200b82d6ec9" default)))
- '(js2-basic-offset 2 t))
+ '(js2-basic-offset 2 t)
+ '(safe-local-variable-values (quote ((flycheck-gcc-language-standard . c++11)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
