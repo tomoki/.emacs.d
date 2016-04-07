@@ -17,3 +17,9 @@
 
 (define-key global-map (kbd "C-c C-<return>") (lambda () (interactive)
                                                 (call-process-shell-command "urxvt&" nil 0)))
+
+(custom-set-variables '(windmove-wrap-around t))
+(global-set-key (kbd "C-M-j") 'windmove-cycle-left)
+(global-set-key (kbd "C-M-k") 'windmove-cycle-down)
+(global-set-key (kbd "C-M-l") 'windmove-cycle-up)
+(global-set-key (kbd "C-M-;") 'windmove-cycle-right)
